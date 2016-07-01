@@ -16,9 +16,10 @@ describe('sentimentAnalysis', function() {
 
 describe('twitterSearch', function() {
   it('should create a twitter client', function () {
-    twitterClient
+    assert.equal(twitterSearch.twitterClient)
   });
-  it('should', function(){
-    
+
+  it('should return an array of tweets with the keyword', function(){
+    assert.equal(twitterSearch('everlane'))
   });
 });
