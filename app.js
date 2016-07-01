@@ -10,7 +10,7 @@ var routes = require('./routes/index');
 
 var app = express();
 
-// view engine setup
+// view engine setup w/ ejs + html
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');

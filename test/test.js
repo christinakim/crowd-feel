@@ -13,13 +13,17 @@ describe('sentimentAnalysis', function() {
   });
 });
 
-
 describe('twitterSearch', function() {
-  it('should create a twitter client', function () {
-    assert.equal(twitterSearch.twitterClient)
+  it('should return an array for callback', function() {
+    twitterSearch('everlane', function(data){
+      assert.equal(typeof data, 'array');
+    });
   });
 
-  it('should return an array of tweets with the keyword', function(){
-    assert.equal(twitterSearch('everlane'))
+  it('should return array of tweets with their sentiment analysis', function() {
+    twitterSearch('everlane', function(data){
+      assert.equal(typeof data[0].tweet, 'string');
+      assert.equal(typeof data[0].score, 'number');
+    });
   });
 });

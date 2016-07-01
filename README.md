@@ -1,6 +1,6 @@
 CrowdFeel
 
-A Nodejs app that uses the Twitter API and Sentiment module to show the reaction/sentiment of a term/brand/hashtag.
+A Nodejs app that uses the Twitter API and the node Sentiment module(https://www.npmjs.com/package/sentiment) to show the reaction/sentiment of a term/brand/hashtag.
 
 * To run locally:
 1.Clone/Download the repo
