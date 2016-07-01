@@ -14,20 +14,20 @@ module.exports = function(text, callback) {
   access_token_secret: 'SpB3v21wWib2ct2DqxNe4UaIY2I92Zc7ttaFBc60Q7gcF'
 });
 
-  var response = [], dbData = []; 
+  var response = [], fbData = []; 
   twitterClient.search(text, function(data) {
     for (var i = 0; i < data.statuses.length; i++) {
       var resp = {};
       resp.tweet = data.statuses[i];
       resp.sentiment = sentimentAnalysis(data.statuses[i].text);
-      dbData.push({
+      fbData.push({
         "tweet" : resp.tweet.text,
         "score" : resp.sentiment.score
       });
       response.push(resp);
     };
 
-    arr.push(dbData);
+    arr.push(fbData);
     callback(response);
   });
 }

@@ -21,23 +21,3 @@ input {
   overflow: hidden;
   padding-right: 18px;
 }
-.left {
-  float: left;
-  width: 39%;
-}
-.right {
-  float: right;
-  width: 55%;
-  border-left: 1px dashed;
-  padding-left: 21px;
-}
-
-.right table {
-  width: 100%;
-}
-.right table, .right table td {
-  border: 1px solid;
-}
-.right table td {
-  width: 50%;
-}

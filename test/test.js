@@ -26,4 +26,15 @@ describe('twitterSearch', function() {
       assert.equal(typeof data[0].score, 'number');
     });
   });
+
+  it('should update firebase with the results', function(){
+    
+  });
+});
+
+
+describe('summarizeSentiment', function() {
+  it('should return an object with average sentiment score', function() {
+
+  });
 });

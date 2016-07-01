@@ -5,7 +5,6 @@
   <title>CrowdFeel</title>
   <link rel='stylesheet' href='/stylesheets/style.css'/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
 </head>
 
 <body>
@@ -15,17 +14,15 @@
   <input type="text" id="searchText" placeholder="Enter text here!">
   <div class="results">
     <h3>Sentiment Results</h3>
-    <lable class="loading">Loading.. Please wait</lable>
+    <div class="loading">Loading.. Please wait</div>
     <br/>
-    <lable class="error">Oh no! Something went wrong</lable>
+    <div class="error">Oh no! Something went wrong</div>
     <br/>
   </div>
   <section class="tweets">
   </section>
 
- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-          
+ <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>          
  <script type="text/javascript" src="scripts/app.js"></script>
 
   <script type="text/html" id="tweet_template">
