@@ -6,10 +6,10 @@ var dotenv = require('dotenv').config();
 
 var arr = [];
 var twitterClient = new twitter({
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+  consumer_key: 'xXwv9OiBh3CZdugxN48vZSPLQ',
+  consumer_secret: 'kGi5j3FYm378iDB8WsMneVqqNRU5rMDz7odTvpiUvjF9gjZHcc',
+  access_token_key: '2675160464-97ZeLTscGjoOKyh77cX78dyfCJgx98kh3FpdQbj',
+  access_token_secret: 'SpB3v21wWib2ct2DqxNe4UaIY2I92Zc7ttaFBc60Q7gcF'
 });
 
 module.exports = function(text, callback) {
